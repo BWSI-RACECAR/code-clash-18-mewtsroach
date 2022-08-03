@@ -45,6 +45,8 @@ class Solution:
         for i in cost:
             if i.isdigit():
                 num = i
+            elif i not in pool:
+                return False
 
         if (len(cost) + int(num) - 1) == len(pool):
             return True
