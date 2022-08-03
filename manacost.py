@@ -46,7 +46,7 @@ class Solution:
             if i.isdigit():
                 num = i
 
-        if (len(cost) + num - 1) == len(pool):
+        if (len(cost) + int(num) - 1) == len(pool):
             return True
         return False
 
